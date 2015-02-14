@@ -1,5 +1,12 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-  Hello, world.
+  <div id="mobile"></div>
+  <div id="desktop">
+    <canvas id="canvas" width="600" height="600"></canvas>
+  </div>
+  <script src="/js/gyro.js"></script>
+  <script src="/js/isMobile.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.1.2/firebase.js"></script>
+  <script src="/js/index.js"></script>
 {% endblock %}

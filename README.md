@@ -1,65 +1,20 @@
-Dodo
+Get Reel
 ====
 
-![](http://fxcnews.com/wp-content/uploads/2014/11/dodo_bird.jpg)
+> Big fish reelin'.
 
-> Periodically unfollow Twitter users in a private Twitter list.
-
-Related services:
-- [unfollow](https://github.com/lambtron/dodo-unfollow)
-- [trapper](https://github.com/lambtron/dodo-trapper)
-- [hunter](https://github.com/lambtron/dotjs-scripts/blob/master/twitter.com.js)
-
-### How to use
-
-1. Create a [list](https://support.twitter.com/articles/76460-using-twitter-lists) on Twitter with the word 'Dodo' in its title
-2. Go to [Dodo](http://dodo-twitter.herokuapp.com/) and authorize your Twitter account
-3. Follow Twitter users and add them to your 'Dodo' list
-4. Every month, this app will automatically unfollow them for you
-
-### Running Locally
+### Running locally
 
 Make sure you have `node 0.11.x` installed, as [Koa](http://koajs.com/) requires generators.
 
-#### Getting `node 0.11.x` and `mongoDB`
+Also make sure you have [ngrok](https://ngrok.com/) installed.
 
-- You can install `node 0.10.33` (or the latest stable version of `node`) [here](http://nodejs.org/download/)
-- Then install [`n`](https://www.npmjs.org/package/n), a nifty node management tool, with `npm install -g n` in your terminal
-- Once `n` is installed, then run `n 0.11.14`
-- Install `mongoDB` [here](http://docs.mongodb.org/manual/installation/)
-
-#### Running the server
-
-Afterwards, run the following commands:
-
-```
-$ git clone git@github.com:lambtron/node-koa-mongo-swig-seed.git
-$ cd node-koa-mongo-swig-seed
-$ mongod
-$ make
-```
-
-You should see:
-
-```
-listening on port 3000
-```
-
-Then, point your browser to `localhost:3000`.
-
-### Deploying to Heroku
-
-Make sure you have a [Heroku](http://www.heroku.com) account and you have Heroku's [CLI](https://toolbelt.heroku.com/) installed. Afterwards, run the following commands.
-
-```
-$ heroku create
-Creating polar-escarpment-5726... done, stack is cedar-14
-https://polar-escarpment-5726.herokuapp.com/ | git@heroku.com:polar-escarpment-5726.git
-Git remote heroku added
-$ git push heroku master
-```
-
-Then, point your browser to `https://polar-escarpment-5726.herokuapp.com/`.
+1. Run `make`
+2. Run `ngrok 3000`
+3. Open your browser to `localhost:3000`
+4. Open your mobile browser to whatever the ngrok address is
+5. ???
+6. Profit
 
 ## License (MIT)
 
